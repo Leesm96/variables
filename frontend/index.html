@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quick Advice</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="home-screen" class="panel active">
+        <header class="hero">
+          <p class="eyebrow">BeanStation AI</p>
+          <h1>빠른 조언이 필요하신가요?</h1>
+          <p class="lede">고민을 선택하면 바로 결과 화면으로 안내해 드릴게요.</p>
+        </header>
+        <div class="button-grid" aria-label="빠른 상담 옵션">
+          <button class="issue-button" data-issue="bitter">
+            <span class="label">쓴맛 고민</span>
+            <small>밸런스 다시 잡기</small>
+          </button>
+          <button class="issue-button" data-issue="stress">
+            <span class="label">스트레스 해소</span>
+            <small>심호흡과 짧은 휴식</small>
+          </button>
+          <button class="issue-button" data-issue="focus">
+            <span class="label">집중력 향상</span>
+            <small>작게 쪼개서 시작</small>
+          </button>
+          <button class="issue-button" data-issue="calm">
+            <span class="label">긴장 완화</span>
+            <small>자세와 호흡 정돈</small>
+          </button>
+          <button class="issue-button" data-issue="energy">
+            <span class="label">에너지 충전</span>
+            <small>가벼운 스트레칭</small>
+          </button>
+        </div>
+      </section>
+
+      <section id="result-screen" class="panel" aria-live="polite">
+        <button id="back-button" class="ghost">← 홈으로</button>
+        <div class="result-card">
+          <p class="pill" id="result-issue">상태: -</p>
+          <p class="advice" id="result-advice">조언을 불러오는 중입니다...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
