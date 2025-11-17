@@ -1,0 +1,9 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "Static UI for quick advice navigation.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
