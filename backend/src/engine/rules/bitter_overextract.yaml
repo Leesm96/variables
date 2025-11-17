@@ -1,0 +1,23 @@
+id: bitter_overextract
+issue: "쓴맛/탄맛 과다 (오버 추출)"
+priority: 8
+conditions:
+  time:
+    min: 30
+  dose:
+    min: 18
+  yield:
+    max: 34
+  temperature:
+    min: 94
+  degassing:
+    min: 10
+  season:
+    - summer
+    - autumn
+    - winter
+adjustments:
+  - "분쇄도를 약간 굵게 조정해 추출 시간을 단축합니다."
+  - "도징을 0.5~1g 줄여 오버 추출을 완화합니다."
+  - "추출 온도를 1~2°C 낮춰 쓴맛을 줄입니다."
+  - "샷 비율을 늘려 수율을 확보합니다."
