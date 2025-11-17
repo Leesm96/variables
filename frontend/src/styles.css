@@ -1,0 +1,270 @@
+:root {
+  font-family: 'Noto Sans KR', system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8fafc;
+}
+
+.app-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 16px 64px;
+}
+
+.hero {
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  margin: 8px 0;
+  font-size: 1.8rem;
+}
+
+.hero .lede {
+  color: #334155;
+}
+
+.eyebrow {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 14px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.card__meta {
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.card__body {
+  color: #0f172a;
+  line-height: 1.5;
+}
+
+.card__footer {
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list--inline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.list--bullets {
+  list-style: disc;
+  padding-left: 20px;
+  color: #0f172a;
+  gap: 8px;
+}
+
+.list__title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.list__desc {
+  margin: 4px 0 0;
+  color: #475569;
+  line-height: 1.4;
+}
+
+.pill {
+  display: inline-flex;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background: #0ea5e9;
+  color: white;
+  align-self: flex-start;
+}
+
+.pill--muted {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.pill--ghost {
+  background: #fff;
+  color: #0f172a;
+  border: 1px solid #e2e8f0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.field input,
+.field select {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.field__group {
+  display: grid;
+  grid-template-columns: 1fr 80px;
+  gap: 8px;
+}
+
+.field__error {
+  color: #b91c1c;
+  font-size: 0.85rem;
+}
+
+.form__hint {
+  color: #b91c1c;
+  margin: 0;
+}
+
+.form__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button.primary {
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button.primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.ghost {
+  background: transparent;
+  border: none;
+  color: #0f172a;
+  cursor: pointer;
+  font-size: 0.95rem;
+  padding: 6px;
+}
+
+.placeholder {
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.notice {
+  background: #ecfeff;
+  border: 1px solid #a5f3fc;
+  color: #0f172a;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.error {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.muted {
+  color: #475569;
+}
+
+.card.feedback-panel {
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.skeleton-card {
+  border-style: dashed;
+}
+
+.skeleton {
+  display: block;
+  background: linear-gradient(90deg, #e2e8f0, #f8fafc, #e2e8f0);
+  background-size: 200% 100%;
+  animation: shimmer 1s ease-in-out infinite;
+  border-radius: 10px;
+  height: 14px;
+}
+
+@keyframes shimmer {
+  from {
+    background-position: 200% 0;
+  }
+  to {
+    background-position: -200% 0;
+  }
+}
