@@ -1,0 +1,26 @@
+id: weak_body
+issue: "바디감 부족/묽은 맛"
+priority: 7
+conditions:
+  time:
+    min: 22
+    max: 28
+  dose:
+    min: 17
+    max: 19
+  yield:
+    min: 42
+  temperature:
+    min: 93
+    max: 95
+  degassing:
+    min: 6
+    max: 14
+  season:
+    - autumn
+    - winter
+adjustments:
+  - "도징을 0.5~1g 늘려 농도를 보강합니다."
+  - "추출 비율을 낮춰 샷 수율을 1~2g 줄입니다."
+  - "온도를 0.5~1°C 높여 단맛을 강화합니다."
+  - "분쇄도를 약간 더 가늘게 맞춰 추출 시간을 늘립니다."

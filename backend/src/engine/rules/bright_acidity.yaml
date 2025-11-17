@@ -1,0 +1,22 @@
+id: bright_acidity
+issue: "산미 과다 (언더 추출)"
+priority: 9
+conditions:
+  time:
+    max: 25
+  dose:
+    max: 18
+  yield:
+    min: 36
+  temperature:
+    max: 92
+  degassing:
+    max: 5
+  season:
+    - spring
+    - summer
+adjustments:
+  - "분쇄도를 조금 더 가늘게 조정하여 추출 시간을 늘립니다."
+  - "도징을 0.5~1g 증가시켜 농도를 확보합니다."
+  - "추출 온도를 1~2°C 높여 맛 밸런스를 맞춥니다."
+  - "추출 시간을 3~5초 늘려 언더 추출을 방지합니다."

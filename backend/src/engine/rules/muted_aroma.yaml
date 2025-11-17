@@ -1,0 +1,26 @@
+id: muted_aroma
+issue: "향미/단맛 약함"
+priority: 6
+conditions:
+  time:
+    min: 25
+    max: 32
+  dose:
+    min: 18
+    max: 19
+  yield:
+    min: 34
+    max: 40
+  temperature:
+    min: 92
+    max: 94
+  degassing:
+    min: 12
+  season:
+    - winter
+    - spring
+adjustments:
+  - "볶은 지 7~10일 이내 원두를 사용해 향미를 회복합니다."
+  - "디게싱이 길다면 핸드스핀이나 프리인퓨전을 줄여가며 테스트합니다."
+  - "추출 온도를 1°C 올려 단맛을 강조합니다."
+  - "추출 시간을 2~3초 늘려 향미를 끌어냅니다."
