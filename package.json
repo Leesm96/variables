@@ -2,8 +2,10 @@
   "name": "variables",
   "version": "1.0.0",
   "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest"
+    "lint": "npm run lint:backend",
+    "lint:backend": "node --check backend/src/server.js backend/src/engine.js backend/src/routes/feedback.js backend/src/metrics.js",
+    "test": "vitest run backend/tests",
+    "test:watch": "vitest backend/tests"
   },
   "dependencies": {
     "js-yaml": "^4.1.0",
